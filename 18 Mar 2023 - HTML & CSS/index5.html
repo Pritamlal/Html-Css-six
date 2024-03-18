@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative and Absolute</title>
+</head>
+<body>
+    <div class="box">
+    <img class="pic" src="image.png">
+    <div class="discount">25% off</div>
+    </div>
+</body>
+</html>
+
+<style>
+    .box
+    {
+        background-color: darkslategray;
+        height:1300px;
+        width: 1300px;
+        position:relative;
+        margin-left:2400px;
+        margin-top:700px;
+    }
+    .pic
+    {
+        width:900px;
+        height:990px;
+        object-fit: cover;
+        padding-left:150px;
+        padding-right:35px;
+        padding-top:145px;
+        padding-bottom:75px;
+        position:absolute;
+    }
+
+    .discount
+    {
+        position: absolute;
+        font-size:85px;
+        top:0;
+        right:0;
+        background-color: black;
+        color:white;
+        margin-right:15px;
+    }
+</style>
